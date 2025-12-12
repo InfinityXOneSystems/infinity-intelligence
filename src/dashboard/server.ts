@@ -5,7 +5,7 @@
 
 import express, { Request, Response } from 'express';
 import * as dotenv from 'dotenv';
-import orchestrator from './orchestrator';
+import RealEstateOrchestrator from '../orchestrator';
 
 dotenv.config();
 
@@ -26,7 +26,7 @@ app.get('/health', (req: Request, res: Response) => {
  * System status
  */
 app.get('/api/status', (req: Request, res: Response) => {
-  const status = new orchestrator().getStatus();
+  const status = new RealEstateOrchestrator().getStatus();
   res.json(status);
 });
 
@@ -149,7 +149,7 @@ app.get('/api/payments/stats', async (req: Request, res: Response) => {
  */
 app.post('/api/trigger/cycle', async (req: Request, res: Response) => {
   try {
-    const orch = new orchestrator();
+    const orch = new RealEstateOrchestrator();
 
     // Run in background
     orch.executeIntelligenceCycle().catch(console.error);
@@ -171,7 +171,7 @@ app.post('/api/trigger/phase/:phase', async (req: Request, res: Response) => {
   }
 
   try {
-    const orch = new orchestrator();
+    const orch = new RealEstateOrchestrator();
     await orch.executePhase(phase as any);
 
     res.json({ success: true, message: `Phase ${phase} completed` });
