@@ -114,7 +114,7 @@ export class IntelligentLLMRouter extends EventEmitter {
       isAvailable: !!process.env.ANTHROPIC_API_KEY,
     },
     {
-      name: 'gemini-pro',
+      name: 'gemini-2.5-flash',
       provider: 'google',
       priority: 4,
       costPerMTok: 0.5,

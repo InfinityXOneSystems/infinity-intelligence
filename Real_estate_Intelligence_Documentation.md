@@ -3844,7 +3844,7 @@
 111         isAvailable: !!process.env.ANTHROPIC_API_KEY,
 112       },
 113       {
-114         name: 'gemini-pro',
+114         name: 'gemini-2.5-flash',
 115         provider: 'google',
 116         priority: 4,
 117         costPerMTok: 0.5,
@@ -8683,7 +8683,7 @@ STRIPE_SECRET_KEY=sk_test_YOUR_KEY_HERE
 403   #### Email Systems
 404   - **Gmail API** - Personal email with full OAuth2 integration
 405   - **SendGrid** - Bulk marketing & transactional emails
-406   - **Default Domain:** noreply@infinityxai.com
+406   - **Default Domain:** noreply@infinityxonesystems.com
 407   - **Features:** HTML templates, bulk send, tracking, unsubscribe
 408   
 409   #### Calendar Management
