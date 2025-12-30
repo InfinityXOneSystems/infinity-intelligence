@@ -132,7 +132,7 @@ export class WorkflowAutomationSystem {
     try {
       const msg = {
         to: message.to,
-        from: process.env.SENDGRID_FROM_EMAIL || 'noreply@infinityxai.com',
+        from: process.env.SENDGRID_FROM_EMAIL || 'noreply@infinityxonesystems.com',
         subject: message.subject,
         text: message.text,
         html: message.html,
