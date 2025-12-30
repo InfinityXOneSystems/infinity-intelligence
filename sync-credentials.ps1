@@ -26,7 +26,7 @@ $WarningPreference = "Continue"
 $SCRIPT_NAME = "Credential Sync"
 $LOG_FILE = Join-Path $RealEstatePath "logs\credential-sync-$(Get-Date -Format 'yyyyMMdd-HHmmss').log"
 $GITHUB_OWNER = "InfinityXOneSystems"
-$GITHUB_REPO = "real_estate_intelligence"
+$GITHUB_REPO = "infinity-intelligence"
 $EXCLUDED_KEYS = @("STRIPE_SECRET_KEY", "JWT_SECRET", "SESSION_SECRET", "DB_PASSWORD", "REDIS_PASSWORD")
 
 # ============================================================================

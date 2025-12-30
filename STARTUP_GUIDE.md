@@ -311,7 +311,7 @@ npm run docker:rebuild
 Get-Content .env
 
 # Check GitHub Secrets (if using CI/CD)
-# https://github.com/InfinityXOneSystems/Real_Estate_Intelligence/settings/secrets/actions
+# https://github.com/InfinityXOneSystems/infinity-intelligence/settings/secrets/actions
 
 # Re-sync if needed
 .\scripts\sync-to-github-secrets.ps1
